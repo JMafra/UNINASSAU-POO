@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Exercicio03 {
 
     /* 
-     * Uso do comando condicional swith.
+     * Uso do comando condicional switch.
      * Método para ler um mês como um número inteiro
-     * e imprimir no terminal o nome do mês por extenso     * 
+     * e imprimir no terminal o nome do mês por extenso      
      */
 
     public void converterMesExtenso(){
