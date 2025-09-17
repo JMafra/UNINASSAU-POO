@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercicio03 {
 
     /* 
-     * Uso do comando de repetição swith.
+     * Uso do comando condicional swith.
      * Método para ler um mês como um número inteiro
      * e imprimir no terminal o nome do mês por extenso     * 
      */

@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Exercicio02 {
     /*
      * Uso da classe Scanner para ler dados do teclado
-     * Método para realizar cálculo de média 
+     * Método para realizar cálculo de média de 5 alunos
      */
    public void calcularMediaAluno() {
        Scanner input = new Scanner(System.in);
