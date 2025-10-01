@@ -1,3 +1,5 @@
+import classesobjetos.*;
+
 public class Main {
 
     /* Para executar os exercícios criados é necessário:
@@ -8,14 +10,14 @@ public class Main {
      public static void main(String[] args) throws Exception {
 
        Exercicio06_ContaBancaria conta = new Exercicio06_ContaBancaria();
-       conta.numero = "2222-2";
-       conta.saldo = 1000;
+       conta.setNumero("2222-2");
+       conta.setSaldo(1000);
 
        conta.creditar(500);
-       System.out.println("Saldo" + conta.saldo);
+       System.out.println("Saldo" + conta.getSaldo());
 
        conta.debitar(100);
-       System.out.println("Saldo" + conta.saldo);
+       System.out.println("Saldo" + conta.getSaldo());
 
       /*  Exercicio05_Cachorro cachorro1 = new Exercicio05_Cachorro();
        Exercicio05_Cachorro cachorro2 = new Exercicio05_Cachorro();

@@ -1,3 +1,5 @@
+package sintaxebasica;
+
 public class Exercicio01 {
   
   /* 

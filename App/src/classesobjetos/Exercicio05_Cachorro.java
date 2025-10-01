@@ -1,3 +1,5 @@
+package classesobjetos;
+
 public class Exercicio05_Cachorro{
 
     String nome;
