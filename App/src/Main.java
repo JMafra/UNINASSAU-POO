@@ -1,4 +1,9 @@
+import sintaxebasica.*;
+
+import java.util.Scanner;
+
 import classesobjetos.*;
+import heranca.*;
 
 public class Main {
 
@@ -9,17 +14,40 @@ public class Main {
      */
      public static void main(String[] args) throws Exception {
 
-       Exercicio06_ContaBancaria conta = new Exercicio06_ContaBancaria();
+       Poupanca poupanca = new Poupanca("11111", 500);
+
+       poupanca.creditar(1000);
+       System.out.println("Saldo" + poupanca.getSaldo());
+
+       poupanca.debitar(200);
+       System.out.println("Saldo" + poupanca.getSaldo());
+
+       poupanca.renderJuros(5);
+       System.out.println("Saldo com Juros" + poupanca.getSaldo());
+
+       Conta conta = new Conta("22222", 5000);
+       conta.creditar(1000);
+
+       System.out.println("Saldo Conta Corrente:" + conta.getSaldo());
+
+      
+
+       /*Exercicio06_ContaBancaria conta = new Exercicio06_ContaBancaria();
        conta.setNumero("2222-2");
        conta.setSaldo(1000);
-
        conta.creditar(500);
        System.out.println("Saldo" + conta.getSaldo());
 
        conta.debitar(100);
        System.out.println("Saldo" + conta.getSaldo());
 
-      /*  Exercicio05_Cachorro cachorro1 = new Exercicio05_Cachorro();
+       Exercicio06_ContaBancaria conta2 = new Exercicio06_ContaBancaria("444-4", 2000);     
+       System.out.println("Numero da conta: " + conta2.getNumero());
+       System.out.println("Saldo: " + conta2.getSaldo());
+
+       
+
+        Exercicio05_Cachorro cachorro1 = new Exercicio05_Cachorro();
        Exercicio05_Cachorro cachorro2 = new Exercicio05_Cachorro();
        cachorro1.latir();
        cachorro1.nome = "Bob";

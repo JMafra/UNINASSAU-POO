@@ -4,6 +4,17 @@ public class Exercicio06_ContaBancaria {
 
     private String numero;
     private double saldo;
+     
+
+    public Exercicio06_ContaBancaria(){
+      this.numero = null;
+       this.saldo = 0;
+    }
+
+     public Exercicio06_ContaBancaria(String numero, double saldo){
+       this.numero = numero;
+       this.saldo = saldo;
+    }
 
     public void setSaldo(double s){
        this.saldo = s;
