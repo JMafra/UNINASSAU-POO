@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 import classesobjetos.*;
 import heranca.*;
+import herancaexercicio.*;
 
 public class Main {
 
@@ -14,7 +15,19 @@ public class Main {
      */
      public static void main(String[] args) throws Exception {
 
-       Poupanca poupanca = new Poupanca("11111", 500);
+      Curso curso = new Curso(11111, "ADS");
+
+      Aluno aluno1 = new Aluno("João Silva", "99999999999", 8, curso);
+      Aluno aluno2 = new Aluno("Juliana Mafra", "88888888888", 8, curso);
+
+      aluno1.setNome("Maria Souza");
+
+      System.out.println("Nome do Aluno: " + aluno1.getNome());
+      System.out.println("Curso: " + aluno1.getCurso().getNome());
+      System.out.println("Total de Alunos: " + Aluno.getTotalAlunos());
+      System.out.println("Total de Alunos: " + Aluno.getTotalAlunos());
+
+      /*  Poupanca poupanca = new Poupanca("11111", 500);
 
        poupanca.creditar(1000);
        System.out.println("Saldo" + poupanca.getSaldo());
@@ -29,7 +42,7 @@ public class Main {
        conta.creditar(1000);
 
        System.out.println("Saldo Conta Corrente:" + conta.getSaldo());
-
+      */
       
 
        /*Exercicio06_ContaBancaria conta = new Exercicio06_ContaBancaria();
